@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djago_APIs</title>
+</head>
+
+<body>
+    <h1>Movie List</h1>
+    <div class="movies">
+        {%for movie_list in movies%}
+        <div class="article">
+            <h2>{{Movie.movie_name}}</h2>
+            <p>{{Movie.movie_description}}</p>
+            <p>{{Movie.is_active}}</p>
+        </div>
+        {%endfor%}
+    </div>
+</body>
+
+</html>

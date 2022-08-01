@@ -20,5 +20,5 @@ Including another URLconf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movies/', include('watchlist_app.urls')),
+    path('movies/', include('watchlist_app.API.urls')),
 ]

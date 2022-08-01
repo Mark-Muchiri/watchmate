@@ -13,9 +13,9 @@
     <div class="movies">
         {%for movie_list in movies%}
         <div class="article">
-            <h2>{{Movie.movie_name}}</h2>
-            <p>{{Movie.movie_description}}</p>
-            <p>{{Movie.is_active}}</p>
+            <h2>{{movie_list.movie_name}}</h2>
+            <p>{{movie_list.movie_description}}</p>
+            <p>{{movie_list.is_active}}</p>
         </div>
         {%endfor%}
     </div>

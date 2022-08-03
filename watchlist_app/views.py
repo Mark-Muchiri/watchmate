@@ -25,8 +25,7 @@ def movie_list(request):
             return Response(serializer.data)
         else:
             return Response(serializer.errors)
-
-
+ 
 @api_view(['GET', 'POST'])
 def movie_detail(request, pk):
     if request.method == 'GET':
